@@ -4,7 +4,7 @@ import 'package:android_autostart/android_autostart.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   MyAppState createState() => MyAppState();
@@ -15,9 +15,7 @@ class MyAppState extends State<MyApp> {
 
   void _showSnackBar(bool isAvailable) {
     _scaffoldMessengerKey.currentState?.showSnackBar(
-      SnackBar(
-        content: Text("Auto start setting is available: $isAvailable"),
-      ),
+      SnackBar(content: Text("Auto start setting is available: $isAvailable")),
     );
   }
 
@@ -42,9 +40,7 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       scaffoldMessengerKey: _scaffoldMessengerKey,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Enable AutoStart Example App'),
-        ),
+        appBar: AppBar(title: const Text('Enable AutoStart Example App')),
         body: Center(
           child: Column(
             children: [

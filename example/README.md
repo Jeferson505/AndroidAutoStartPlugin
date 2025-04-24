@@ -1,6 +1,6 @@
-# android_autostart_example
+# example
 
-Demonstrates how to use the android_autostart plugin.
+A new Flutter project.
 
 ## Getting Started
 
